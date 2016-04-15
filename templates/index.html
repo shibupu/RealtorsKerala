@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Realtors Kerala</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="/static/images/logo.png" alt="" /></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav pull-right">
+                        <li>
+                            <a href="#">Partners</a>
+                        </li>
+                        <li>
+                            <a href="#">Advertisers</a>
+                        </li>
+                        <li>
+                            <a href="#">Create Alerts</a>
+                        </li>
+                        <li>
+                            <a href="#">Signin/Signup</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <div class="main_banner">
+             <div class="banner_section_home">
+                <div class="banner_section_inner">
+                    <div class="home_banner_content">
+                        <h1>A <span>real estate</span> search engine.</h1>
+                        <h5>725,000+ houses, villas, apartments and more...</h5>
+                        <div class="search_wrap">
+                            <form action="/search/" method="post">
+                                <input type="text" name="keyword" placeholder="What" autofocus required oninput="setCustomValidity('');" oninvalid="this.setCustomValidity('Please enter keyword');" />
+                                <input type="text" name="location" placeholder="Where (optional)" />
+                                <input type="submit" value="Search" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="home_tabs">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Ads by Location</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Ads by Source</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Ads by Type</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">My Searches</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="/city/Alappuzha/">Alappuzha</a></li>
+                                            <li><a href="/city/Idukki/">Idukki</a></li>
+                                            <li><a href="/city/Kasaragod/">Kasaragod</a></li>
+                                            <li><a href="/city/Kochi/">Kochi</a></li>
+                                            <li><a href="/city/Kollam/">Kollam</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="/city/Kottayam/">Kottayam</a></li>
+                                            <li><a href="/city/Kozhikode/">Kozhikode</a></li>
+                                            <li><a href="/city/Malappuram/">Malappuram</a></li>
+                                            <li><a href="/city/Palakkad/">Palakkad</a></li>
+                                            <li><a href="/city/Idukki/">Idukki</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="/city/Pathanamthitta/">Pathanamthitta</a></li>
+                                            <li><a href="/city/Thiruvananthapuram/">Thiruvananthapuram</a></li>
+                                            <li><a href="/city/Thrissur/">Thrissur</a></li>
+                                            <li><a href="/city/Wayanad/">Wayanad</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="#">Accounting - Auditing</a></li>
+                                            <li><a href="#">Aerospace - Defence</a></li>
+                                            <li><a href="#">Agriculture - Forestry - Fishing</a></li>
+                                            <li><a href="#">Apparel - Fashion - Textile</a></li>
+                                            <li><a href="#">Architecture - Building - Construction</a></li>
+                                            <li><a href="#">Arts - Design - Entertainment</a></li>
+                                            <li><a href="#">Automotive - Motor Vehicles</a></li>
+                                            <li><a href="#">Banking - Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="#">Accounting - Auditing</a></li>
+                                            <li><a href="#">Aerospace - Defence</a></li>
+                                            <li><a href="#">Agriculture - Forestry - Fishing</a></li>
+                                            <li><a href="#">Apparel - Fashion - Textile</a></li>
+                                            <li><a href="#">Architecture - Building - Construction</a></li>
+                                            <li><a href="#">Arts - Design - Entertainment</a></li>
+                                            <li><a href="#">Automotive - Motor Vehicles</a></li>
+                                            <li><a href="#">Banking - Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="#">Accounting - Auditing</a></li>
+                                            <li><a href="#">Aerospace - Defence</a></li>
+                                            <li><a href="#">Agriculture - Forestry - Fishing</a></li>
+                                            <li><a href="#">Apparel - Fashion - Textile</a></li>
+                                            <li><a href="#">Architecture - Building - Construction</a></li>
+                                            <li><a href="#">Arts - Design - Entertainment</a></li>
+                                            <li><a href="#">Automotive - Motor Vehicles</a></li>
+                                            <li><a href="#">Banking - Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="messages">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="#">Accounting - Auditing</a></li>
+                                            <li><a href="#">Aerospace - Defence</a></li>
+                                            <li><a href="#">Agriculture - Forestry - Fishing</a></li>
+                                            <li><a href="#">Apparel - Fashion - Textile</a></li>
+                                            <li><a href="#">Architecture - Building - Construction</a></li>
+                                            <li><a href="#">Arts - Design - Entertainment</a></li>
+                                            <li><a href="#">Automotive - Motor Vehicles</a></li>
+                                            <li><a href="#">Banking - Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="#">Accounting - Auditing</a></li>
+                                            <li><a href="#">Aerospace - Defence</a></li>
+                                            <li><a href="#">Agriculture - Forestry - Fishing</a></li>
+                                            <li><a href="#">Apparel - Fashion - Textile</a></li>
+                                            <li><a href="#">Architecture - Building - Construction</a></li>
+                                            <li><a href="#">Arts - Design - Entertainment</a></li>
+                                            <li><a href="#">Automotive - Motor Vehicles</a></li>
+                                            <li><a href="#">Banking - Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="#">Accounting - Auditing</a></li>
+                                            <li><a href="#">Aerospace - Defence</a></li>
+                                            <li><a href="#">Agriculture - Forestry - Fishing</a></li>
+                                            <li><a href="#">Apparel - Fashion - Textile</a></li>
+                                            <li><a href="#">Architecture - Building - Construction</a></li>
+                                            <li><a href="#">Arts - Design - Entertainment</a></li>
+                                            <li><a href="#">Automotive - Motor Vehicles</a></li>
+                                            <li><a href="#">Banking - Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="settings">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="#">Accounting - Auditing</a></li>
+                                            <li><a href="#">Aerospace - Defence</a></li>
+                                            <li><a href="#">Agriculture - Forestry - Fishing</a></li>
+                                            <li><a href="#">Apparel - Fashion - Textile</a></li>
+                                            <li><a href="#">Architecture - Building - Construction</a></li>
+                                            <li><a href="#">Arts - Design - Entertainment</a></li>
+                                            <li><a href="#">Automotive - Motor Vehicles</a></li>
+                                            <li><a href="#">Banking - Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="#">Accounting - Auditing</a></li>
+                                            <li><a href="#">Aerospace - Defence</a></li>
+                                            <li><a href="#">Agriculture - Forestry - Fishing</a></li>
+                                            <li><a href="#">Apparel - Fashion - Textile</a></li>
+                                            <li><a href="#">Architecture - Building - Construction</a></li>
+                                            <li><a href="#">Arts - Design - Entertainment</a></li>
+                                            <li><a href="#">Automotive - Motor Vehicles</a></li>
+                                            <li><a href="#">Banking - Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="#">Accounting - Auditing</a></li>
+                                            <li><a href="#">Aerospace - Defence</a></li>
+                                            <li><a href="#">Agriculture - Forestry - Fishing</a></li>
+                                            <li><a href="#">Apparel - Fashion - Textile</a></li>
+                                            <li><a href="#">Architecture - Building - Construction</a></li>
+                                            <li><a href="#">Arts - Design - Entertainment</a></li>
+                                            <li><a href="#">Automotive - Motor Vehicles</a></li>
+                                            <li><a href="#">Banking - Financial Services</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.container -->
+        <div class="container">
+            <hr>
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; Realtors Kerala 2015</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /.container -->
+
+    </body>
+
+</html>
